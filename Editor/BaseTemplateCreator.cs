@@ -1,9 +1,8 @@
 #if UNITY_EDITOR
 using System.IO;
 using UnityEditor;
-using UnityEngine;
 
-public class BaseTemplateCreator : MonoBehaviour
+public static class BaseTemplateCreator
 {
     static string TEMPLATE_BASE_PATH =  @"Packages/com.partisanprogrammer.base-templates/Editor/Templates/";
     const string ASSET_PATH = "Assets/Create/Templates/Base/";
@@ -43,12 +42,14 @@ public class BaseTemplateCreator : MonoBehaviour
         CreateScriptAssetFromTemplateFile(filename);
     }
     
-    [MenuItem(ASSET_PATH + "Attribute", priority = 30)]
-    public static void CreateAttributeMenuItem()
+    [MenuItem(ASSET_PATH + "Static Class", priority = 30)]
+    public static void CreateStaticClassMenuItem()
     {
-        var filename = "AttributeTemplate.txt";
+        var filename = "StaticClassTemplate.txt";
         CreateScriptAssetFromTemplateFile(filename);
     }
+    
+    
     
     [MenuItem(ASSET_PATH + "Singleton", priority = 30)]
     public static void CreateSingletonMenuItem()
