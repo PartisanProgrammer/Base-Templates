@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "#SCRIPTNAME#", menuName = "ScriptableObjects/#SCRIPTNAME#")]
+[CreateAssetMenu(fileName = "New#SCRIPTNAME#", menuName = "Scriptable Objects/#SCRIPTNAME#")]
 public class #SCRIPTNAME# : ScriptableObject
 {	
  
