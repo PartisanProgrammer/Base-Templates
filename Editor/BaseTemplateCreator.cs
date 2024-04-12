@@ -14,6 +14,13 @@ public class BaseTemplateCreator : MonoBehaviour
         var filename = "ScriptableObjectTemplate.txt";
         CreateScriptAssetFromTemplateFile(filename);
     }
+    
+    [MenuItem(ASSET_PATH + "MonoBehaviour", priority = 30)]
+    public static void CreateMonoBehaviourMenuItem()
+    {
+        var filename = "MonoBehaviourTemplate.txt";
+        CreateScriptAssetFromTemplateFile(filename);
+    }
     public static void CreateScriptAssetFromTemplateFile(string templateName)
     {
         var createdFileName = templateName.Insert(0, "New")
