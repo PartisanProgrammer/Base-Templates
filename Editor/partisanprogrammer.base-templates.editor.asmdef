@@ -1,0 +1,6 @@
+{
+  "name": "partisanprogrammer.base-templates.editor",
+  "includePlatforms": [
+    "Editor"
+  ]
+}
